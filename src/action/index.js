@@ -1,13 +1,13 @@
 import axios from 'axios'
-import { API , KEY } from '../config'
-export const GET_GIPHY = "GET_GIPHY"
+import {API, KEY} from '../config'
+export const GET_WEATHER = 'GET_WEATHER'
 
-export function getGiphy(name){
-    const url = API + name + KEY
+export function getWeather(country){
+    const url = API + country +KEY
     const request = axios.get(url)
     console.log(request)
     return{
-        type:GET_GIPHY,
+        type:GET_WEATHER,
         payload:request
     }
 }

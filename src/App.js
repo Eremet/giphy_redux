@@ -1,11 +1,11 @@
 import React from 'react'
-import InputSearch from './components/InputSearch'
+import Search from './components/Search'
 import Output from './components/Output'
 
 export default function App() {
   return (
     <div>
-      <InputSearch/>
+      <Search/>
       <Output/>
     </div>
   )

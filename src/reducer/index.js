@@ -1,9 +1,9 @@
-import { combineReducers } from "redux";
-import giphy from './giphy'
+import {combineReducers} from 'redux'
+import weather from './weather'
 
 const rootReducer = combineReducers(
     {
-        giphy
+        weather
     }
 )
 
